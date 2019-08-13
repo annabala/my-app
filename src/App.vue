@@ -16,5 +16,14 @@
 }
 body {
   font-family: "Muli";
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+#app {
+  height: 100%;
 }
 </style>
