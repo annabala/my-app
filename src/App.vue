@@ -9,6 +9,12 @@
   </div>
 </template>
 
-<style lang="scss" scoped>
-
+<style lang="scss">
+@font-face {
+  font-family: "Muli";
+  src: url("assets/fonts/Muli-Regular.ttf") format("ttf");
+}
+body {
+  font-family: "Muli";
+}
 </style>
