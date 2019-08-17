@@ -8,22 +8,9 @@
     <router-view/>
   </div>
 </template>
+<script>
 
+</script>
 <style lang="scss">
-@font-face {
-  font-family: "Muli";
-  src: url("assets/fonts/Muli-Regular.ttf") format("ttf");
-}
-body {
-  font-family: "Muli";
-  height: 100vh;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0;
-  box-sizing: border-box;
-  overflow: hidden;
-}
-#app {
-  height: 100%;
-}
+@import "./styles/basics/base.scss";
 </style>
