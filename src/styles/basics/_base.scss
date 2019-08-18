@@ -10,7 +10,12 @@ body {
     padding: 0;
     box-sizing: border-box;
     overflow: hidden;
+    color: $text;
 }
 #app {
     height: 100%;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
