@@ -1,0 +1,17 @@
+@mixin flexSetup($direction, $justifyContent, $alignItems) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+}
+
+@mixin NavBorderTriangle {
+    content: '';
+    width: 0; 
+    height: 0; 
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    opacity: 0;
+    transition: opacity .2s ease;
+    position: absolute;
+}
