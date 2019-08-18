@@ -1,11 +1,13 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/Projects">Projects</router-link> |
-      <router-link to="/Contact">Contact</router-link>
+    <div class="container">
+      <div id="nav" class="navList">
+        <router-link to="/" class="navList__item navList__item-active">Home</router-link>
+        <router-link to="/Projects" class="navList__item">Projects</router-link>
+        <router-link to="/Contact" class="navList__item">Contact</router-link>
+      </div>
+      <router-view/>
     </div>
-    <router-view/>
   </div>
 </template>
 <script>

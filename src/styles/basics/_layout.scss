@@ -1,0 +1,40 @@
+// 
+// Navigation 
+//
+.navList {
+    display: flex;
+    @include flexSetup(row, flex-start, center);
+    padding: 25px 0;
+    &__item {
+        margin: 0 40px 0 0;
+        text-decoration: none;
+        color: $text;
+        font-weight: 600;
+        position: relative;
+        &:nth-of-type(odd) {
+            &::before {
+                @include NavBorderTriangle;
+                border-bottom: 15px solid $primaryLight;
+                left: 50%;
+                bottom: -7px;
+                transform: translate(-50%, 50%);
+            }
+            &:hover::before {
+                opacity: 1;
+            }
+        }
+        &:nth-of-type(even) {
+            &::before {
+                @include NavBorderTriangle;
+                border-top: 15px solid $primaryLight;
+                left: 50%;
+                top: -7px;
+                transform: translate(-50%, -50%);
+            }
+            &:hover::before {
+                opacity: 1;
+            }
+        }
+        
+    }
+}
